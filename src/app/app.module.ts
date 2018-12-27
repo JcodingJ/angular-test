@@ -10,6 +10,10 @@ import { CourseComponent } from './course/course.component';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { InputFormatDirective } from './input-format.directive';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { SignupFormComponent } from './signup-form/signup-form.component';
+import { NewCourseFormComponent } from './new-course-form/new-course-form.component';
+import { PostsComponent } from './posts/posts.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,13 +22,17 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     CourseComponent,
     FavoriteComponent,
     InputFormatDirective,
-    ContactFormComponent  
+    ContactFormComponent  ,
+    SignupFormComponent,
+    NewCourseFormComponent,
+    PostsComponent, 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [
     CourseService
